@@ -8,11 +8,14 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-// application router
+// application routes
 app.use('/api/v1/users', usersRouter)
 
 //testing
 app.get('/', async (req: Request, res: Response) => {
+  res.send('working!')
+})
+app.get('/world', async (req: Request, res: Response) => {
   res.send('Hello World!')
 })
 
