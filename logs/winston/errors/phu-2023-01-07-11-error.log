@@ -1,0 +1,5 @@
+Sat Jul 01 2023 11:12:24 GMT+0600 (Bangladesh Standard Time) 11:12:24 => [PH] error: Failed to connect database querySrv ESERVFAIL _mongodb._tcp.cluster0.xoltgwa.mongodb.net
+Sat Jul 01 2023 11:13:33 GMT+0600 (Bangladesh Standard Time) 11:13:33 => [PH] error: Failed to connect database querySrv ESERVFAIL _mongodb._tcp.cluster0.xoltgwa.mongodb.net
+Sat Jul 01 2023 11:14:24 GMT+0600 (Bangladesh Standard Time) 11:14:24 => [PH] error: Failed to connect database querySrv ESERVFAIL _mongodb._tcp.cluster0.xoltgwa.mongodb.net
+Sat Jul 01 2023 11:15:06 GMT+0600 (Bangladesh Standard Time) 11:15:6 => [PH] error: Failed to connect database querySrv ESERVFAIL _mongodb._tcp.cluster0.xoltgwa.mongodb.net
+Sat Jul 01 2023 11:21:14 GMT+0600 (Bangladesh Standard Time) 11:21:14 => [PH] error: Testing error looger

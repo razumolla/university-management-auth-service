@@ -1,0 +1,80 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/razu/PH-Level-2/university-management-auth-service/logs/winston/successes/.5a790de6ec8847ca1cd29954270789398eb41baa-audit.json",
+    "files": [
+        {
+            "date": 1687403903412,
+            "name": "/home/razu/PH-Level-2/university-management-auth-service/logs/winston/successes/phu-2023-22-06-09-success.log",
+            "hash": "b2562eb98959829c1083be5b03cab1d9619bde4f8c640cba8f614878c87133ce"
+        },
+        {
+            "date": 1687654550698,
+            "name": "/home/razu/PH-Level-2/university-management-auth-service/logs/winston/successes/phu-2023-25-06-06-success.log",
+            "hash": "d0ab6eb10a11bea61ead951e53314748f6d73e81ad5bb0dbf24022a930aba975"
+        },
+        {
+            "date": 1687656442010,
+            "name": "/home/razu/PH-Level-2/university-management-auth-service/logs/winston/successes/phu-2023-25-06-07-success.log",
+            "hash": "1603768f802301c0666faad3dfa5fc378fa1e1c0dfb57f16bb0f15ec61ea1f64"
+        },
+        {
+            "date": 1687658547887,
+            "name": "/home/razu/PH-Level-2/university-management-auth-service/logs/winston/successes/phu-2023-25-06-08-success.log",
+            "hash": "0743fe8e5cc2da4687126d56948b1992e65895ea6845aece96a12b5fd3f715f9"
+        },
+        {
+            "date": 1688144316893,
+            "name": "/home/razu/PH-Level-2/university-management-auth-service/logs/winston/successes/phu-2023-30-06-22-success.log",
+            "hash": "044d9e65e39a902db5bb99e5614e29e98f482265546768c350a6317f02ce374e"
+        },
+        {
+            "date": 1688144428724,
+            "name": "/home/razu/PH-Level-2/university-management-auth-service/logs/winston/successes/phu-2023-30-06-23-success.log",
+            "hash": "8d6e8a87aa76ff6db16201eb0509e28c25ebda52ef94eea36e3d34e3794ae84d"
+        },
+        {
+            "date": 1688180709086,
+            "name": "/home/razu/PH-Level-2/university-management-auth-service/logs/winston/successes/phu-2023-01-07-09-success.log",
+            "hash": "783b3187d703ca1a2e9cf40072a1de0955f03e6f10f7784bdb605afb04570267"
+        },
+        {
+            "date": 1688184146042,
+            "name": "/home/razu/PH-Level-2/university-management-auth-service/logs/winston/successes/phu-2023-01-07-10-success.log",
+            "hash": "21d7303d16a6dbff64bc4fba72d058b50b68c22ab8481f16197c9e7a00fca1bd"
+        },
+        {
+            "date": 1688187628481,
+            "name": "/home/razu/PH-Level-2/university-management-auth-service/logs/winston/successes/phu-2023-01-07-11-success.log",
+            "hash": "0daf1144895bcbd591d6b84070c8f4b37c6d4a364c9bc4963cd9ddc45f93b8d9"
+        },
+        {
+            "date": 1688197226114,
+            "name": "/home/razu/PH-Level-2/university-management-auth-service/logs/winston/successes/phu-2023-01-07-13-success.log",
+            "hash": "6a88631b553dfa222696193b7cf228ded39423e32bd6dfbdaac42a83f52ff526"
+        },
+        {
+            "date": 1688210964099,
+            "name": "/home/razu/PH-Level-2/university-management-auth-service/logs/winston/successes/phu-2023-01-07-17-success.log",
+            "hash": "525233f8b925f4219601a051d1b8938c1c8592acd99ead13bd16b645e36016fa"
+        },
+        {
+            "date": 1688215524312,
+            "name": "/home/razu/PH-Level-2/university-management-auth-service/logs/winston/successes/phu-2023-01-07-18-success.log",
+            "hash": "6b0c274a29cbe852604b406049c52c44b4e1b6a3136ed17fcd8f3251e033e305"
+        },
+        {
+            "date": 1688227112943,
+            "name": "/home/razu/PH-Level-2/university-management-auth-service/logs/winston/successes/phu-2023-01-07-21-success.log",
+            "hash": "25d2bcac7dd2d8b038ba5d69966b83366bfccde1ef82d66747cba29eb303b884"
+        },
+        {
+            "date": 1688229115434,
+            "name": "/home/razu/PH-Level-2/university-management-auth-service/logs/winston/successes/phu-2023-01-07-22-success.log",
+            "hash": "c8e88668db81c143a1fd8117bc2aa964f135ce95d2fb80291aa501d47f6b0bac"
+        }
+    ],
+    "hashType": "sha256"
+}

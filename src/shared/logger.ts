@@ -11,7 +11,7 @@ const myFormat = printf(({ level, message, label, timestamp }) => {
   const minuits = date.getMinutes()
   const seconds = date.getSeconds()
 
-  return `${date.toString()} ${hour}:${minuits}:${seconds} => [${label}] ${level}: ${message}`
+  return `${date.toDateString()} ${hour}:${minuits}:${seconds} => [${label}] ${level}: ${message}`
 })
 
 const logger = createLogger({

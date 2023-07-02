@@ -1,22 +1,26 @@
-import express, { Application, Request, Response } from 'express'
-import cors from 'cors'
-import usersRouter from './app/modules/users/users.route'
-const app: Application = express()
+import express, { Application } from 'express';
+import cors from 'cors';
+import globalErrorhandler from './app/middlewares/globalErrorHandler';
+import { UserRoutes } from './app/modules/user/user.route';
+const app: Application = express();
 
-app.use(cors())
+app.use(cors());
 //parser
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // application routes
-app.use('/api/v1/users', usersRouter)
+app.use('/api/v1/users', UserRoutes);
 
-//testing
-app.get('/', async (req: Request, res: Response) => {
-  res.send('working now!')
-})
-app.get('/world', async (req: Request, res: Response) => {
-  res.send('Hello World!')
-})
+// //testing
+// app.get('/', async (req: Request, res: Response, next: NextFunction) => {
+//   // throw new ApiError(400, 'Ore baba')
+//   // next('Ore baba error')
+//   // Promise.reject(new Error('UnHandled promise Rejection'))
+//   throw new Error('Testing error looger')
+// })
 
-export default app
+// Global Error Handling
+app.use(globalErrorhandler);
+
+export default app;
