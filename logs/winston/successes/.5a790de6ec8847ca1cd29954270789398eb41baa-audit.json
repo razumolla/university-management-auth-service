@@ -74,6 +74,11 @@
             "date": 1688229115434,
             "name": "/home/razu/PH-Level-2/university-management-auth-service/logs/winston/successes/phu-2023-01-07-22-success.log",
             "hash": "c8e88668db81c143a1fd8117bc2aa964f135ce95d2fb80291aa501d47f6b0bac"
+        },
+        {
+            "date": 1688362324818,
+            "name": "/home/razu/PH-Level-2/university-management-auth-service/logs/winston/successes/phu-2023-03-07-11-success.log",
+            "hash": "dcb652e8405d2a8cf820fd5bcba73859db3b6116d15944023db7632c0ea9be67"
         }
     ],
     "hashType": "sha256"
