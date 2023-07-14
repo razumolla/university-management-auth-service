@@ -144,6 +144,16 @@
             "date": 1689325416446,
             "name": "/home/razu/PH-Level-2/university-management-auth-service/logs/winston/errors/phu-2023-14-07-15-error.log",
             "hash": "e11302ffafea6383fa238748bae0e8517e525197bf45e5a41ee5c3864dab7c95"
+        },
+        {
+            "date": 1689342868723,
+            "name": "/home/razu/PH-Level-2/university-management-auth-service/logs/winston/errors/phu-2023-14-07-19-error.log",
+            "hash": "4a18647bdbb66498a18c28fc3958e99136fc3a98c3f95e013db5a4025d19ae87"
+        },
+        {
+            "date": 1689347262462,
+            "name": "/home/razu/PH-Level-2/university-management-auth-service/logs/winston/errors/phu-2023-14-07-21-error.log",
+            "hash": "0d704075b5b3b4431bfecdb7337a5d2f1c4a69658fc9a7261f8028926deed2a8"
         }
     ],
     "hashType": "sha256"
