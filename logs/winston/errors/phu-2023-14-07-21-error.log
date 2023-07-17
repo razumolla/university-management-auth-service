@@ -1,2 +1,4 @@
 Fri Jul 14 2023 21:11:56 => [PH] error: $and/$or/$nor must be a nonempty array
 Fri Jul 14 2023 21:18:33 => [PH] error: $and/$or/$nor must be a nonempty array
+Fri Jul 14 2023 21:37:59 => [PH] error: keys is not iterable
+Fri Jul 14 2023 21:44:4 => [PH] error: $and/$or/$nor must be a nonempty array
