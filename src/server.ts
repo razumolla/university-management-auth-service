@@ -33,26 +33,27 @@ async function bootstrap() {
       process.exit(1);
     }
   });
+  // }
+  // bootstrap();
+
+  // process.on('SIGTERM', () => {
+  //   logger.info('SIGTERM is received');
+  //   if (server) {
+  //     server.close();
+  //   }
+  // });
+
+  process.on('SIGTERM', () => {
+    logger.info('SIGTERM is received');
+    if (server) {
+      server.close(() => {
+        logger.info('Server is closed');
+        process.exit(0);
+      });
+    } else {
+      process.exit(0);
+    }
+  });
 }
+
 bootstrap();
-
-process.on('SIGTERM', () => {
-  logger.info('SIGTERM is received');
-  if (server) {
-    server.close();
-  }
-});
-
-//   process.on('SIGTERM', () => {
-//     logger.info('SIGTERM is received');
-//     if (server) {
-//       server.close(() => {
-//         logger.info('Server is closed');
-//         process.exit(0);
-//       });
-//     } else {
-//       process.exit(0);
-//     }
-//   });
-// }
-// bootstrap();
