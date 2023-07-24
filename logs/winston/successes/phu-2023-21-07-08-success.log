@@ -1,0 +1,5 @@
+Fri Jul 21 2023 8:4:30 => [PH] info: Database connected successfully
+Fri Jul 21 2023 8:4:30 => [PH] info: Application listening on port 5000
+Fri Jul 21 2023 8:8:2 => [PH] info: SIGTERM is received
+Fri Jul 21 2023 8:8:6 => [PH] info: Database connected successfully
+Fri Jul 21 2023 8:8:6 => [PH] info: Application listening on port 5000

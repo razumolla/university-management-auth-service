@@ -1,8 +1,8 @@
 import express, { Application, NextFunction, Request, Response } from 'express';
 import cors from 'cors';
-import globalErrorhandler from './app/middlewares/globalErrorHandler';
 import routes from './app/routes';
 import httpStatus from 'http-status';
+import globalErrorHandler from './app/middlewares/globalErrorHandler';
 const app: Application = express();
 
 app.use(cors());
@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 // application routes
 // app.use('/api/v1/users', UserRoutes);
 // app.use('/api/v1/academic-semesters', AcademicSemesterRoutes);
-app.use('/api/v1', routes);
+app.use('/api/v1/', routes);
 
 // //testing
 // app.get('/', async (req: Request, res: Response, next: NextFunction) => {
@@ -25,7 +25,7 @@ app.use('/api/v1', routes);
 // })
 
 // Global Error Handling
-app.use(globalErrorhandler);
+app.use(globalErrorHandler);
 
 // Handle Not Found (404)
 app.use((req: Request, res: Response, next: NextFunction) => {

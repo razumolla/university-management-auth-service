@@ -4,6 +4,8 @@ import { AcademicSemesterValidation } from './academicSemester.validation';
 import { AcademicSemesterController } from './academicSemester.controller';
 const router = express.Router();
 
+router.get('/', AcademicSemesterController.getAllSemesters);
+
 router.post(
   '/create-semester',
   validateRequest(AcademicSemesterValidation.createAcademicSemesterZodSchema),
@@ -11,7 +13,5 @@ router.post(
 );
 
 router.get('/:id', AcademicSemesterController.getSingleSemester);
-
-router.get('/', AcademicSemesterController.getAllSemesters);
 
 export const AcademicSemesterRoutes = router;

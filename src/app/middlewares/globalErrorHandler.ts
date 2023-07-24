@@ -1,20 +1,27 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 /* eslint-disable no-unused-expressions */
-
-import { ErrorRequestHandler } from 'express';
+import { ErrorRequestHandler, NextFunction, Request, Response } from 'express';
+import { Error } from 'mongoose';
 import config from '../../config';
-import { IGenericErrorMessage } from '../../interfaces/error';
 import handleValidationError from '../../errors/handleValidationError';
 import ApiError from '../../errors/ApiError';
-import { errorlogger } from '../../shared/logger';
-import { ZodError } from 'zod';
-import handleZodError from '../../errors/handleZodError';
 
-const globalErrorhandler: ErrorRequestHandler = (error, req, res, next) => {
+import { ZodError } from 'zod';
+import { IGenericErrorMessage } from '../../interfaces/error';
+import handleZodError from '../../errors/handleZodError';
+import { errorlogger } from '../../shared/logger';
+import handleCastError from '../../errors/handleCastError';
+
+const globalErrorHandler: ErrorRequestHandler = (
+  error,
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   config.env === 'development'
-    ? console.log('🐱 gloalErrorHandler ~', error)
-    : errorlogger.error('🐱 gloalErrorHandler ~', error);
+    ? console.log(`🐱 globalErrorHandler ~~`, { error })
+    : errorlogger.error(`🐱 globalErrorHandler ~~`, error);
 
   let statusCode = 500; // internal server error
   let message = 'Something went wrong !';
@@ -27,6 +34,11 @@ const globalErrorhandler: ErrorRequestHandler = (error, req, res, next) => {
     errorMessages = simplifiedError.errorMessages;
   } else if (error instanceof ZodError) {
     const simplifiedError = handleZodError(error);
+    statusCode = simplifiedError.statusCode;
+    message = simplifiedError.message;
+    errorMessages = simplifiedError.errorMessages;
+  } else if (error?.name === 'CastError') {
+    const simplifiedError = handleCastError(error);
     statusCode = simplifiedError.statusCode;
     message = simplifiedError.message;
     errorMessages = simplifiedError.errorMessages;
@@ -59,7 +71,6 @@ const globalErrorhandler: ErrorRequestHandler = (error, req, res, next) => {
     errorMessages,
     stack: config.env !== 'production' ? error?.stack : undefined,
   });
-
-  next();
 };
-export default globalErrorhandler;
+
+export default globalErrorHandler;

@@ -1,0 +1,5 @@
+Sun Jul 23 2023 8:1:32 => [PH] error: Cast to ObjectId failed for value "64b105e4af41f1a9c183dd" (type string) at path "_id" for model "AcademicSemester"
+Sun Jul 23 2023 8:4:15 => [PH] error: Cast to ObjectId failed for value "64b105e4af41f1a9c183dd" (type string) at path "_id" for model "AcademicSemester"
+Sun Jul 23 2023 8:8:14 => [PH] error: Cast to ObjectId failed for value "64b105e4af41f1a9c183dd" (type string) at path "_id" for model "AcademicSemester"
+Sun Jul 23 2023 8:9:34 => [PH] error: Cast to ObjectId failed for value "64b105e4af41f1a9c183dd" (type string) at path "_id" for model "AcademicSemester"
+Sun Jul 23 2023 8:18:24 => [PH] error: Invalid Semester Code
